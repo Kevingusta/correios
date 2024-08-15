@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header"> 
+  <img src="assets/correios_amarelo.png" height="110"> 
+   <nav class="menu"> 
+    
+
+     
+       
+  <ul class="list">
+       <li class = "nav-link"> 
+          <a href="https://www.correios.com.br/educacao-e-cultura/filatelia/compre-seu-selo-aqui/compre-seu-selo-aqui">Loja Online</a>
+        </li>
+  </ul>
+
+  <ul class="list">
+        <li  class = "nav-link">
+      <a href = "https://www.correios.com.br/atendimento/ferramentas" >Atendimento</a>
+    </li>
+  </ul>
+
+  <ul class="list">
+    <li class = "nav-link">
+          <a href = "https://www.correios.com.br/atendimento/contato" >Contato</a>
+        </li>
+  </ul>
+
+  <ul class="list">
+        <li class = "nav-link">
+          <a href = "https://www.correios.com.br/receber/encomenda" >Encomendas</a>
+        </li>
+  </ul>
+
+  <ul class="list">
+    <li class = "nav-link">
+      <a href = "https://www.correios.com.br/acesso-a-informacao/auditorias" >Autoria</a>
+    </li>
+</ul>
+
+ 
+</nav>
+
+<div class="pesquisa">
+
+ <form class = "form_pesquisa" action="#" method="get">
+  <input type="text" placeholder="Pesquisar">
+  <button type="submit">Pesquisar</button>
+</form>
+
+</div>
+
+    </div>
+
+   
+    <h1>Consulta de CEP</h1>
+    <label for="cepInput">Digite o CEP:</label>
+    <input type="text" id="cepInput">
+    <button onclick="buscarEndereco()">Buscar</button>
+    <div id="endereco"></div>
+
+    <script>
+        function buscarEndereco() {
+            var cep = document.getElementById('cepInput').value;
+            var url = `https://viacep.com.br/ws/${cep}/json/`;
+            
+            fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if(data.erro) {
+                    document.getElementById('endereco').innerText = "CEP não encontrado.";
+                } else {
+                    var endereco = `CEP: ${data.cep}, ${data.logradouro}, ${data.bairro}, ${data.localidade}, ${data.uf}`;
+                    document.getElementById('endereco').innerText = endereco;
+                }
+            })
+            .catch(error => console.error('Erro:', error));
+        }
+    </script>
+</body>
+</html>

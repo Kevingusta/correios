@@ -1,0 +1,57 @@
+.nav-link {
+    align-items: space-around;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    justify-content: space-around;
+}
+.list {
+    align-items: center;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+.menu {
+   align-items: center;
+    display: flex;
+    justify-content: end  ;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: start;
+  background: linear-gradient(#f3c709,#eec511);
+}
+
+.form_pesquisa {
+    display: flex;
+    align-items: end;
+
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .pesquisa {
+    display: flexbox;
+justify-content: end;
+
+
+
+  }
