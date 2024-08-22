@@ -1,0 +1,166 @@
+/* Reset de estilo básico */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Cabeçalho */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:  #ffffff;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    margin-bottom: 10px;
+  }
+  
+  .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .user-icon {
+    margin-right: 10px;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form_pesquisa {
+    display: flex;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 2px solid #777575;
+    border-radius: 5px;
+    width: 180px;
+    height: 20px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #9900ff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-nav {
+    width: 100%;
+    background: #79488d;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .main-nav ul li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .main-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .main-nav ul li a img {
+    margin-right: 8px;
+  }
+  
+  .main-nav ul li a:hover {
+    background: #8a3583;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  #cepInput, button {
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #endereco {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Estilos para o slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 300px; /* Ajuste a altura conforme necessário */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Efeito de transição das slides */
+@keyframes slideAnimation {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.slide:nth-child(1) {
+    animation: slideAnimation 9s infinite;
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation: slideAnimation 9s infinite;
+    animation-delay: 3s;
+}
+
+.slide:nth-child(3) {
+    animation: slideAnimation 9s infinite;
+    animation-delay: 6s;
+}
+
+  
