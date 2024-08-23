@@ -12,9 +12,6 @@ body, h1, p {
     background:  #ffffff;
   }
   
-  .logo {
-    margin-bottom: 10px;
-  }
   
   .header-nav {
     display: flex;
@@ -87,10 +84,7 @@ body, h1, p {
     justify-content: center;
     padding: 10px;
     font-weight: bold;
-  }
-  
-  .main-nav ul li a img {
-    margin-right: 8px;
+    transition: .6s;
   }
   
   .main-nav ul li a:hover {
@@ -118,71 +112,54 @@ body, h1, p {
     text-align: center;
 }
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.navegacao {
-position: absolute;
-bottom: 20px;
-left: 50%;
-transform: translate(-50%);;
-display: flex;
-}
-.botao {
-  text-align: center;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  border: 2px solid #fff;
-  transition: .6s;
-}
-
-.botao:hover {
-  background-color: #fff;
-}
-
-.Binput{
-  display: none;
-}
-
-.slides{
-  display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: opacity .6s ease-in-out;
-  
-}
-
-
-.active {
-  display: block;
-}
-
-/* Efeitos de transição */
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-.slide.fade {
-  animation-name: fade;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-.section{
+.slide{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 110px;
+    margin-top: 50px;
+    margin-left: 110px; 
     margin-right: 110px;
+    margin-bottom: 50px;
+
 }
-.section h1{
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 110px; 
+    margin-right: 110px;
+    margin-bottom: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container h1{
+    text-align: center;
     color: #79488d;
+}
+
+.tela-fundo{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 12%;
+    height: 80rcarp;
+    margin-left: 20%;
+    background-color: #ffffff;
+}
+
+.img-produt{
+    width: 100%;
+    height: 100%;
+}
+ .desconto {
+   background-color: rgb(50, 201, 50);
+   width: 66PX;
+   margin-left: 10px;
+   margin-bottom: 20px;
+   border-radius: 10px;
+   color: #ffffff;
+}
+.informacao-produt{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
