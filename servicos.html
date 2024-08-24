@@ -1,70 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Petshop</title>
+    <link rel="stylesheet" href="teste.css">
+    <link rel="icon" sizes="192x192" href="assets/Logo Design.png" type="image/png">
 </head>
-    <!DOCTYPE html>
-    <html lang="pt-BR">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Petshop</title>
-        <link rel="stylesheet" href="teste.css">
-    </head>
-    
-    <body>
-        <div class = "center">
-        <header class="header">
-            <div class="logo">
-                <img src="assets/Petshop1.png" height="110" alt="Logo">
-            </div>
-            <div class="header-nav">
-                <div class="user-info">
-                    <img class="user-icon" src="assets/user.png" height="30" alt="Usuário">
-                    <p>Olá, Entre ou <br> Cadastre-se</p>
-                </div>
-    
-    
-                <div class="user-info">
-                    <img class="user-icon" src="assets/atendimento.png" height="30" alt="Usuário">
-                    <p>Olá, Entre ou <br> Cadastre-se</p>
-                </div>
-    
-    
-                <div class="user-info">
-                    <img class="user-icon" src="assets/home.png" height="30" alt="Usuário">
-                    <p>Olá, Entre ou <br> Cadastre-se</p>
-                </div>
-    
-    
-                <div class="user-info">
-                    <img class="user-icon" src="assets/carrinho.png" height="30" alt="Usuário">
-                    <p>Olá, Entre ou <br> Cadastre-se</p>
-                </div>
-    
-                
-                <div class="search">
-                    <form class="form_pesquisa" action="#" method="get">
-                        <input type="text" placeholder="Pesquisar">
-                        <button type="submit">Pesquisar</button>
-                    </form>
-                </div>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="https://www.correios.com.br/educacao-e-cultura/filatelia/compre-seu-selo-aqui/compre-seu-selo-aqui">Loja Online</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="https://www.correios.com.br/atendimento/contato">Contato</a></li>
-                    <li><a href="https://www.correios.com.br/receber/encomenda">Encomendas</a></li>
-                    <li><a href="https://www.correios.com.br/acesso-a-informacao/auditorias">Autoria</a></li>
-                </ul>
-            </nav>
 
+<body>
+    <div class = "center">
+    <header class="header">
+        <div class="header-nav">
+
+            <div class="logo">
+                <a href="inicial.html">
+                <img class="user-icon" src="assets/Logo Design.png" height="110" alt="Usuário">
+            </a>
+            </div>
+
+           
+            <div class="group">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                <g>
+                  <path
+                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                  ></path>
+                </g>
+              </svg>
+              <input class="input" type="search" placeholder="Search" />
+            </div>
             
-        </header>
+
+  <div class="user-info">
+               <a href="#">
+                <img class="user-icon" src="assets/userpreto.png" height="30" alt="Usuário">
+                </a>
+                <p>Olá, Entre ou <br> Cadastre-se</p>
+            </div>
+
+
+
+            <div class="user-info">
+                <a href="#">
+                <img class="user-icon" src="assets/carrinho-preto.png" height="30" alt="carrinho">
+                </a>
+                <p></p>
+            </div>
+          
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+      
+          <div class ="destaques">
+            <section class ="section-destaques">
+                <h2>Escolha por categoria</h2>
+                <img class="img-destaques" src="assets/racao-cachorro.webp" alt="racao para cachorro">
+                <img class="img-destaques" src="assets/racao-gato.webp" alt="racao para cachorro">
+                <img class="img-destaques" src="assets/farmacia-pet.webp" alt="racao para cachorro">
+
+            </section>
+          </div>
+
+
+
+<section id = "section-servicos-fora">
+                <h2>Serviços Oferecidos em um Pet Shop</h2>
+                <p>Um pet shop moderno oferece uma gama diversificada de serviços para atender às necessidades dos animais de estimação e de seus tutores. Abaixo, detalhamos alguns dos principais serviços:</p>
+            </section>
+
+         <div class = "servicos-oferecidos">
+            
+
+            <section class = "section-servicos">
+                <h2>Serviços de Higiene e Estética</h2>
+                <ul>
+                    <li>
+                        <p>Banho e Tosa: Realizados por profissionais qualificados, esses serviços incluem a higienização completa do animal, corte de pelos, remoção de nós e cuidados com as unhas.</p>
+                        <p>Hidratação: Tratamentos para deixar a pelagem do pet macia e brilhante, com produtos específicos para cada tipo de pelo.</p> 
+                        <p>Perfume: Aplicação de fragrâncias suaves e agradáveis para deixar o animal com um cheirinho delicioso.</p>
+                    </li>
+                </ul>
+            </section>
+<div><img src="assets/linha reta.png" alt=""></div>
+            <section class = "section-servicos" >
+                <h2>Serviços Veterinários</h2>
+                <ul>
+                    <li>
+                        <p>Consultas: Atendimento por médicos veterinários para diagnóstico, tratamento de doenças e acompanhamento da saúde do pet.</p>
+                        <p>Vacinação: Aplicação de vacinas essenciais para a prevenção de doenças.</p> 
+                        <p>Vermifugação: Tratamento para a eliminação de parasitas intestinais.</p>
+                        <p>Microchipagem: Implantação de um microchip para identificação do animal em caso de perda.</p>
+                    </li>
+                </ul>
+            </section>
+         </div>
+
+
+
+
+
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>        
+<fotter class = "footer">
+    <div>
+      <nav>
+          <ul class = "telas-ul">
+              <li><a href="#"></a><span><a href="contato.html">Contato</a></span></li>
+              <li><a href="#"></a><span><a href="sobre.html">Sobre</a></span></li>
+              <li><a href="#"></a><span><a href="servicos.html">Serviços</a></span></li>
+              <li><a href="#"></a><span><a href="inicial.html">Home</a></span></li>
+              <li><a href="#"></a>Política de Privacidade</li>
+          </ul>
+      </nav>
+  </div>
+  <div class = "footer-position">
+  <nav>
+      <ul class = "redes-text">
+          <li><a href="#"><img class ="redes-icons" src="assets/whatsapp.png" alt=""></a><span>Wuatsapp: (75) 92570-8925</span></li>
+          <li><a href="#"><img class ="redes-icons" src="assets/twitter.png" alt=""></a><span>Twitter: @petcare</span></li>
+          <li><a href="#"><img class ="redes-icons" src="assets/instagram.png" alt=""></a><span>Instagram: @petcare</span></li>
+          <li><a href="#"><img class ="redes-icons" src="assets/facebook.png" alt=""></a><span>Facebook: @petcare</span></li>
+      </ul>
+  </nav>
+  </div>
+  </fotter>
+</div>
 </body>
+
 </html>

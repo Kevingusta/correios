@@ -31,24 +31,58 @@ body, h1, p {
   
   .user-icon {
     margin-right: 10px;
+    transition: transform 0.3s ease; 
   }
   
-  .search {
-    display: flex;
-    align-items: center;
+  .user-icon:hover {
+    transform: scale(1.2);
   }
   
-  .form_pesquisa {
-    display: flex;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    border: 2px solid #777575;
-    border-radius: 5px;
-    width: 180px;
-    height: 20px;
-  }
+ 
+ 
+ /* From Uiverse.io by LightAndy1 */ 
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: rgba(0, 48, 73, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+
   
   button[type="submit"] {
     padding: 10px 20px;
@@ -61,7 +95,7 @@ body, h1, p {
   
   .main-nav {
     width: 100%;
-    background: #79488d;
+    background: #402617;
   }
   
   .main-nav ul {
@@ -74,21 +108,23 @@ body, h1, p {
   .main-nav ul li {
     flex: 1;
     text-align: center;
+    
   }
   
   .main-nav ul li a {
     color: #ffffff;
     text-decoration: none;
+    font-size: 1.0em;
+    font-family: "Gooper" !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     font-weight: bold;
     transition: .6s;
   }
   
   .main-nav ul li a:hover {
-    background: #8a3583;
+    color: #af9687;
     border-radius: 5px;
   }
   
@@ -112,15 +148,19 @@ body, h1, p {
     text-align: center;
 }
 
-.slide{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-left: 110px; 
-    margin-right: 110px;
-    margin-bottom: 50px;
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px; 
+  
+}
 
+.slide img {
+  width: 1000px;
+ height: 500px;
+
+  border-radius: 10px;
 }
 .section{
     display: flex;
@@ -134,7 +174,16 @@ body, h1, p {
 }
 .container h1{
     text-align: center;
-    color: #79488d;
+    color: #664634;
+}
+
+.container p{
+  text-align: center;
+  margin-left: 400px;
+  margin-right: 400px;
+  font-size: 18px;
+
+  
 }
 
 .tela-fundo{
@@ -142,13 +191,15 @@ body, h1, p {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 12%;
     height: 80rcarp;
-    margin-left: 20%;
+    margin-left: 70px;
     background-color: #ffffff;
 }
 
 .img-produt{
+    margin-top: 10px;
     width: 100%;
     height: 100%;
+    max-width: 100px;
 }
  .desconto {
    background-color: rgb(50, 201, 50);
@@ -162,4 +213,281 @@ body, h1, p {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+
+
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.botao-comprar{
+  display: block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  margin-bottom: 20px;
+}
+
+.botao-comprar span{
+  position: relative;
+  z-index: 2;
+}
+
+.botao-comprar:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #402617;
+  transition: all .35s;
+}
+
+.botao-comprar:hover{
+  color: #fff;
+}
+
+.botao-comprar:hover:after{
+  width: 100%;
+}
+
+.caixas-compra{
+    display: flex;
+    margin-top: 140px;
+    justify-content: center;
+    align-items: row;
+}
+
+.destaques{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.destaques h2{
+    color: #664634;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.img-destaques{
+    width: 130px;
+    height: 130px;
+    transition: transform 0.3s ease; 
+    border-radius: 50%;
+    margin-left: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.img-destaques:hover{
+    transform: scale(1.1);
+}
+
+
+.categorias{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.categorias-sec{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.img-cate{
+    width: 60px;
+    height: 60px;
+}
+.produto-h1{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #664634;
+}
+
+.comentarios-sec ul li {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  margin-bottom: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img-perfil {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; 
+  margin-bottom: 40px;
+}
+
+.comentario-texto { 
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.section-servicos h2{
+  color:#664634;
+}
+
+.servicos-oferecidos{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.servicos-oferecidos{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.servicos-oferecidos ul li {
+   list-style: none;
+}
+#section-servicos-fora{
+    margin-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#section-servicos-fora h2{
+  color: #664634;
+  margin-top: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.body-beje{
+  background-image: url(assets/tela-fundo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  right: 100%;
+ 
+}
+#h2-comentario{
+  color: #664634;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.texto-alimento h2{
+  color:#664634 ;
+}
+.post{
+  margin-top: 50px;
+  margin-left: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.post-position{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+  
+}
+.post2{
+  margin-top: 50px;
+  margin-left: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.post-position2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+  
+}
+#golden{
+  
+  width: 700px;
+  padding-right: 30px;
+}
+
+.redes-icons{
+  width: 30px;
+  height: 30px;
+}
+
+.footer{
+  background: #664634;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer-position{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  font-size: 20px;
+  
+}
+.redes-text{
+  list-style: none;
+  align-items: center;
+  color: #000000;
+  font-size: 18px;
+  
+}
+.telas-ul a{
+color: #000000;
+text-decoration: none;
+}
+.contato-position {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  color: #000000;
+  font-size: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contato-position h2{
+  color: #664634;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
