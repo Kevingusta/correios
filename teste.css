@@ -13,6 +13,29 @@ body, h1, p {
   }
   
   
+
+  .carousel-inner {
+    flex-direction: column;
+    align-items: center;
+    background:  #ffffff;
+  }
+
+  .carousel-item active {
+    flex-direction: column;
+    align-items: center;
+    background:  #ffffff;
+    width: 50%;
+  }
+
+  .carousel-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:  #ffffff;
+    width: 50%;
+
+  }
+  
   .header-nav {
     display: flex;
     align-items: center;
