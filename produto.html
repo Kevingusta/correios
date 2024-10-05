@@ -7,6 +7,8 @@
     <title>Petshop</title>
     <link rel="stylesheet" href="teste.css">
     <link rel="icon" sizes="192x192" href="assets/Logo Design.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -42,8 +44,8 @@
 
 
 
-            <div class="user-info">
-                <a href="#">
+            <div class="user-info-carrinho">
+                <a href="carrinho.html">
                 <img class="user-icon" src="assets/carrinho-preto.png" height="30" alt="carrinho">
                 </a>
                 <p></p>
@@ -54,8 +56,8 @@
             <ul>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="https://www.correios.com.br/atendimento/contato">Contato</a></li>
-                <li><a href="https://www.correios.com.br/receber/encomenda">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="produto.html">Produtos</a></li>
             </ul>
         </nav>
     </header>
@@ -75,15 +77,15 @@
     <section class="tela-fundo">
         <div class="desconto"><p>10% OFF</p></div>
         <div>
-            <img class="img-produt" src="assets/pedigri-golden.png" alt="tela">
+            <img id = "produto-img" class="img-produt" src="assets/pedigri-golden.png" alt="tela">
         </div>  
         <div class ="informacao-produt"><p>Alimento para Cães Adultos Carne ao Molho Pedigree Sachê 100g</p>
         <br>
-            <P>R$ 3,60</P>
+            <P class = "preco-produt">R$ 3,60</P>
         </div>          
          
         <div class="wrapper">
-            <a class = "botao-comprar" href="#"><span>Comprar</span></a>
+            <a class = "botao-comprar" href="carrinho.html" onclick="adicionarAoCarrinho('Alimento para Cães Adultos Carne ao Molho Pedigree Sachê 100g', 3.60, 'assets/pedigri-golden.png')"><span>Comprar</span></a>
           </div>
     </section>
 
@@ -94,11 +96,11 @@
         </div>  
         <div class ="informacao-produt"><p>Ração Golden Formula Cães Filhotes Frango Mini Bits</p>
         <br>
-            <P>R$ 22,90</P>
+            <P class = "preco-produt">R$ 22,90</P>
         </div>          
          
         <div class="wrapper">
-            <a class = "botao-comprar" href="#"><span>Comprar</span></a>
+            <a class = "botao-comprar" href="carrinho.html" onclick="adicionarAoCarrinho('Ração Golden Formula Cães Filhotes Frango Mini Bits', 22.90, 'assets/ração do cachorro.png')"><span>Comprar</span></a>
           </div>
     </section>
     
@@ -109,11 +111,11 @@
         </div>  
         <div class ="informacao-produt"><p>Ração Golden Frango Gatos Adultos- 1.0 Kg</p>
         <br>
-            <P>R$ 29,90</P>
+            <P class = "preco-produt">R$ 29,90</P>
         </div>          
          
         <div class="wrapper">
-            <a class = "botao-comprar" href="#"><span>Comprar</span></a>
+            <a class = "botao-comprar" href="carrinho.html" onclick="adicionarAoCarrinho('Ração Golden Frango Gatos Adultos- 1.0 Kg', 29.90, 'assets/racao-gato.jpg')"><span>Comprar</span></a>
           </div>
     </section>
 
@@ -124,11 +126,11 @@
         </div>  
         <div class ="informacao-produt"><p>Whiskas Sachê Gato Adulto Castrado Carne ao Molho 85g - Laicão</p>
         <br>
-            <P>R$ 3,40</P>
+            <P class = "preco-produt">R$ 3,40</P>
         </div>          
          
         <div class="wrapper">
-            <a class = "botao-comprar" href="#"><span>Comprar</span></a>
+            <a class = "botao-comprar" href="carrinho.html" onclick="adicionarAoCarrinho('Whiskas Sachê Gato Adulto Castrado Carne ao Molho 85g - Laicão', 3.40,'assets/petisco-gato.webp')"><span>Comprar</span></a>
           </div>
     </section>
 
@@ -144,11 +146,11 @@
         <div class ="informacao-produt"><p>Antipulgas e Carrapatos Bravecto 250mg para Cães entre 4,5 e 10kg
             Frete Grátis</p>
         <br>
-            <P>R$ 166,90</P>
+            <P class = "preco-produt">R$ 166,90</P>
         </div>          
          
         <div class="wrapper">
-            <a class = "botao-comprar" href="#"><span>Comprar</span></a>
+            <a class = "botao-comprar" href="carrinho.html" onclick="adicionarAoCarrinho('Antipulgas e Carrapatos Bravecto 250mg para Cães entre 4,5 e 10kg Frete Grält', 166.90, 'assets/remedio pet.webp')"><span>Comprar</span></a>
           </div>
     </section>
 
@@ -159,11 +161,11 @@
         </div>  
         <div class ="informacao-produt"><p>Areia Higiênica Pipicat Bio Vegetal 1,8kg</p>
         <br>
-            <P>R$ 28,90</P>
+            <P class = "preco-produt">>R$ 28,90</P>
         </div>          
          
         <div class="wrapper">
-            <a class = "botao-comprar" href="#"><span>Comprar</span></a>
+            <a class = "botao-comprar" href="carrinho.html" onclick="adicionarAoCarrinho('Areia Higiénica Pipicat Bio Vegetal 1,8kg', 28.90, 'assets/areia-pro.webp')"><span>Comprar</span></a>
           </div>
     </section>
 
@@ -174,11 +176,11 @@
         </div>  
         <div class ="informacao-produt"><p>Bola Cravo Grande Cores Diversas</p>
         <br>
-            <P>R$ 11,99</P>
+            <P class = "preco-produt">R$ 11,99</P>
         </div>          
          
         <div class="wrapper">
-            <a class = "botao-comprar" href="#"><span>Comprar</span></a>
+            <a class = "botao-comprar" href="carrinho.html" onclick="adicionarAoCarrinho('Bola Cravo Grande Cores Diversas', 11.99, 'assets/bola-pet.webp')"><span>Comprar</span></a>
           </div>
     </section>
 
@@ -189,11 +191,11 @@
         </div>  
         <div class ="informacao-produt"><p>Comedouro Alumínio Pesado</p>
         <br>
-            <P>R$ 11,99</P>
+            <P class = "preco-produt">R$ 11,99</P>
         </div>          
          
         <div class="wrapper">
-            <a class = "botao-comprar" href="#"><span>Comprar</span></a>
+            <a class = "botao-comprar" href="carrinho.html" onclick="adicionarAoCarrinho('Comedouro Alumínio Pesado', 11.99, 'assets/comedouro-aluminio.webp')"><span>Comprar</span></a>
           </div>
     </section>
 </div>
@@ -320,6 +322,79 @@
   </nav>
   </div>
   </fotter>
+  <script>
+ let carrinho = [];
+
+ function adicionarAoCarrinho(nomeProduto, preco, imagem) {
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    const produtoExistente = carrinho.find(produto => produto.nome === nomeProduto);
+
+    if (produtoExistente) {
+        produtoExistente.quantidade += 1;
+    } else {
+        carrinho.push({
+            nome: nomeProduto,
+            preco: preco,
+            imagem: imagem, // Armazenando o caminho da imagem
+            quantidade: 1,
+        });
+    }
+
+    localStorage.setItem('carrinho', JSON.stringify(carrinho)); // Salva no Local Storage
+    alert('Produto adicionado ao carrinho!');
+}
+
+        function atualizarCarrinho() {
+    const carrinho = JSON.parse(localStorage.getItem('carrinho')) || []; // Recupere o carrinho do localStorage
+    const tabelaCarrinho = document.querySelector("tbody");
+    tabelaCarrinho.innerHTML = ""; // Limpa a tabela antes de atualizar
+
+    carrinho.forEach((produto, index) => {
+        const total = produto.preco * produto.quantidade;
+        const linha = `
+            <tr>
+                <td>
+                    <div class="product">
+                        <img src="${produto.imagem}" alt="produto"> <!-- Usando a imagem do produto -->
+                        <div class="info-product">
+                            <div class="nome">${produto.nome}</div>
+                            <div class="categoria">Categoria</div>
+                        </div>
+                    </div>
+                </td>
+                <td>R$ ${produto.preco.toFixed(2)}</td>
+                <td>
+                    <div class="qty">
+                        <button onclick="alterarQuantidade(${index}, -1)">-</button>
+                        <span>${produto.quantidade}</span>
+                        <button onclick="alterarQuantidade(${index}, 1)">+</button>
+                    </div>
+                </td>
+                <td>R$ ${total.toFixed(2)}</td>
+                <td>
+                    <button class="remove" onclick="removerProduto(${index})"><i class='bx bx-x'></i></button>
+                </td>
+            </tr>
+        `;
+        tabelaCarrinho.insertAdjacentHTML('beforeend', linha);
+    });
+}
+
+
+function alterarQuantidade(index, quantidade) {
+    carrinho[index].quantidade += quantidade;
+    if (carrinho[index].quantidade <= 0) {
+        carrinho.splice(index, 1); // Remove o produto se a quantidade for zero
+    }
+    atualizarCarrinho();
+}
+
+function removerProduto(index) {
+    carrinho.splice(index, 1);
+    atualizarCarrinho();
+}
+
+    </script>
 </body>
 
 </html>

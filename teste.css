@@ -1,4 +1,21 @@
-/* Reset de estilo básico */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+:root {
+  --second-bg-color: #B29884;
+  --text-color: #4B3D2F;
+  --main-color: #251E17;
+}
+
 body, h1, p {
     margin: 0;
     padding: 0;
@@ -11,8 +28,18 @@ body, h1, p {
     align-items: center;
     background:  #ffffff;
   }
-  
-  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0% ;
+    align-items: center;
+  }
+  .container h1 {
+    color: var(--text-color)  !important;
+  }
+  .container span{
+    color:var(--main-color)
+  }
 
   .carousel-inner {
     flex-direction: column;
@@ -20,7 +47,75 @@ body, h1, p {
     background:  #ffffff;
   }
 
-  .carousel-item active {
+.section-bemvindo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:  #ebdad1;
+}
+
+.section-servicos-card{
+background: #ebdad1;
+
+}
+.main {
+  display: flex; /* Ativa o Flexbox */
+  flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
+  justify-content: space-between; /* Espaça os cards uniformemente */
+}
+
+.card {
+  background-color: #fff; /* Cor de fundo das cards */
+  border: 1px solid #ccc; /* Borda da card */
+  border-radius: 8px; /* Arredondar os cantos */
+  padding: 16px; /* Espaçamento interno */
+  margin: 20px 20px 20px 20px; /* Espaçamento externo */
+  width: calc(50% - 50px); /* Definindo a largura de cada card (50% menos a margem) */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+.card img {
+  max-width: 100%; /* Garante que a imagem não exceda a largura do card */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.card-header {
+  display: flex; /* Flexbox para alinhar o título e a imagem */
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px; /* Alinha verticalmente */
+}
+
+.card-header img {
+  margin-right: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column; /* empilha os elementos */
+  }
+
+  .section-carrinho {
+      margin-right: 0; /* remove margem */
+      margin-bottom: 20px; /* adiciona margem inferior */
+  }
+
+  aside {
+      width: 100%; /* ocupa 100% em telas menores */
+  }
+}
+
+
+  .active {
     flex-direction: column;
     align-items: center;
     background:  #ffffff;
@@ -51,6 +146,13 @@ body, h1, p {
     border-radius: 5px;
     padding: 5px 10px;
   }
+  .user-info-carrinho{
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
   
   .user-icon {
     margin-right: 10px;
@@ -60,10 +162,16 @@ body, h1, p {
   .user-icon:hover {
     transform: scale(1.2);
   }
-  
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 200px;
+    width: 100%;
+    
+  }
  
- 
- /* From Uiverse.io by LightAndy1 */ 
 .group {
   display: flex;
   line-height: 28px;
@@ -118,20 +226,28 @@ input:hover {
   
   .main-nav {
     width: 100%;
-    background: #402617;
+    background: var(--text-color);
   }
-  
+  .section-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   .main-nav ul {
     display: flex;
     justify-content: space-around;
     padding: 0;
     list-style: none;
+    align-items: center;
+    
   }
   
   .main-nav ul li {
     flex: 1;
     text-align: center;
-    
+    align-items: center;
+    margin-top: 13px;
   }
   
   .main-nav ul li a {
@@ -210,6 +326,7 @@ input:hover {
 }
 
 .tela-fundo{
+    flex: 1 1 300px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 12%;
@@ -290,6 +407,7 @@ input:hover {
 }
 
 .caixas-compra{
+  flex-wrap: wrap;
     display: flex;
     margin-top: 140px;
     justify-content: center;
@@ -324,7 +442,11 @@ input:hover {
 .img-destaques:hover{
     transform: scale(1.1);
 }
-
+@media (max-width: 768px) {
+  .user-info {
+      display: none; 
+  }
+}
 
 .categorias{
     margin-bottom: 50px;
@@ -345,6 +467,21 @@ input:hover {
 .img-cate{
     width: 60px;
     height: 60px;
+}
+@media (max-width: 768px) {
+  .categorias {
+      flex-direction: column; /* Coloca as categorias uma abaixo da outra */
+      align-items: center; /* Centraliza os itens */
+  }
+
+  .categorias-sec {
+      width: 80%; /* Aumenta a largura das categorias para telas menores */
+      margin-bottom: 20px; /* Adiciona um espaçamento entre as categorias */
+  }
+
+  .img-cate {
+      width: 80px; /* Diminui o tamanho da imagem para telas menores */
+  }
 }
 .produto-h1{
     text-align: center;
@@ -471,7 +608,8 @@ input:hover {
 }
 
 .footer{
-  background: #664634;
+  background: var(--text-color);
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -479,20 +617,13 @@ input:hover {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .footer-position{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ grid-column: 10px;
   color: #000000;
   font-size: 20px;
+  margin-top: 5px;
   
 }
-.redes-text{
-  list-style: none;
-  align-items: center;
-  color: #000000;
-  font-size: 18px;
-  
-}
+
 .telas-ul a{
 color: #000000;
 text-decoration: none;
@@ -514,3 +645,30 @@ text-decoration: none;
   justify-content: center;
   align-items: center;
 }
+
+.footer-carrinho {
+  background: #01236d;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+
