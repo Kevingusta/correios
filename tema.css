@@ -1,0 +1,87 @@
+/* From Uiverse.io by catraco */ 
+/*------ Settings ------*/
+.container {
+    --color: #a5a5b0;
+    --size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+    padding: 20px !important;
+  }
+ 
+  .container .mode-tema-moon {
+    position: absolute;
+    animation: keyframes-fill .5s;
+  }
+  
+  .container .mode-tema-sun {
+    position: absolute;
+    display: none;
+    animation: keyframes-fill .5s;
+  }
+  
+  .container input:checked ~ .mode-tema-moon {
+    display: none;
+  }
+  
+  .container input:checked ~ .mode-tema-sun {
+    display: block;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* ------ Animation ------ */
+  @keyframes keyframes-fill {
+    0% {
+      transform: rotate(-360deg) scale(0);
+      opacity: 0;
+    }
+  
+    75% {
+      transform: rotate(25deg);
+    }
+  }
+
+  svg#btn-claro {
+    fill: white;
+  }
+
+  svg#btn-escuro {
+    fill: black;
+  }
+  svg .escuro{
+    background: black;
+  }
+    
+  
+  /* Estilos para o tema escuro */
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Estilos para o tema claro */
+  body.light-mode {
+    background-color: #fff;
+    color: #333;
+  }
+  header.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header.light-mode {
+    background-color: #fff;
+    color: #333;
+  }
