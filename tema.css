@@ -1,6 +1,6 @@
 /* From Uiverse.io by catraco */ 
 /*------ Settings ------*/
-.container {
+.container-label {
     --color: #a5a5b0;
     --size: 30px;
     display: flex;
@@ -14,26 +14,28 @@
     padding: 20px !important;
   }
  
-  .container .mode-tema-moon {
+  .container-label .mode-tema-moon {
     position: absolute;
     animation: keyframes-fill .5s;
   }
   
-  .container .mode-tema-sun {
+  .container-label .mode-tema-sun {
     position: absolute;
     display: none;
     animation: keyframes-fill .5s;
   }
   
-  .container input:checked ~ .mode-tema-moon {
+  .container-label input:checked ~ .mode-tema-moon   {
     display: none;
+
   }
   
-  .container input:checked ~ .mode-tema-sun {
+  .container-label input:checked ~ .mode-tema-sun {
     display: block;
+    
   }
   
-  .container input {
+  .container-label input {
     position: absolute;
     opacity: 0;
     cursor: pointer;

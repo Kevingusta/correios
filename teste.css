@@ -142,14 +142,12 @@ background: #ebdad1;
   .user-info {
     display: flex;
     align-items: center;
-    background: #ffffff;
     border-radius: 5px;
     padding: 5px 10px;
   }
   .user-info-carrinho{
     display: flex;
     align-items: center;
-    background: #ffffff;
     border-radius: 5px;
     padding: 5px 10px;
   }
